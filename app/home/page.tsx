@@ -2,8 +2,8 @@ import React from "react";
 
 type Props = {};
 
-const Homeapge = (props: Props) => {
-  return <div>Homeapge</div>;
+const Homepage = (props: Props) => {
+  return <div className=" md:pt-16 "> Homepage</div>;
 };
 
-export default Homeapge;
+export default Homepage;
