@@ -2,17 +2,24 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import logo from "../Assets/Logo Convenir_Vector File.pdf.png";
 
 type Props = {};
+export interface IImg {
+  //   image: HTMLImageElement;
+  src: string;
+  className?: string;
+}
 
 const Navbar = (props: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed top-14 z-50 w-full lg:px-20 px-4 py-4 bg-[#ffe8e7] bg-opacity-80 backdrop-blur-md">
-      <nav className=" flex justify-between w-full items-center">
+    <div className="fixed bg-white top-14 z-50 w-full lg:px-20 px-4 py-2  bg-opacity-80 backdrop-blur-md">
+      <nav className=" flex justify-between w-full items-center border-t-2 md:pt-4 pt-2">
         <div>
-          <h2 className="text-[#ca2124] md:text-2xl">Convenir</h2>
+          <Image className=" md:w-full w-44 md:h-8" src={logo} alt="picture" />
         </div>
         <div className="">
           <ul className=" lg:flex gap-10 hidden font-semibold items-center">

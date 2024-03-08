@@ -1,9 +1,15 @@
-import React from "react";
+import AboutUs from "../components/AboutUs";
+import Hero from "../components/Hero";
 
 type Props = {};
 
 const Homepage = (props: Props) => {
-  return <div className=" md:pt-16 "> Homepage</div>;
+  return (
+    <>
+      <Hero />
+      <AboutUs />
+    </>
+  );
 };
 
 export default Homepage;

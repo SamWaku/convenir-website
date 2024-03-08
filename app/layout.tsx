@@ -24,7 +24,7 @@ export default function RootLayout({
       </main>
       <body className={inter.className}>
         {" "}
-        <div className=" flex-1 px-2 py-4">{children}</div>
+        <div className=" md:pt-[7.5rem] pt-28">{children}</div>
       </body>
     </html>
   );
