@@ -24,7 +24,7 @@ export default function RootLayout({
       </main>
       <body className={inter.className}>
         {" "}
-        <div className=" md:pt-[7.5rem] pt-28">{children}</div>
+        <div className=" grid grid-cols-1 md:pt-[7.5rem] pt-28">{children}</div>
       </body>
     </html>
   );
