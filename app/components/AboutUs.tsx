@@ -9,20 +9,23 @@ const AboutUs = (props: Props) => {
       <div className=" md:grid md:grid-cols-2 flex-col gap-8">
         <div>
           <p className=" md:text-lg font-medium text-slate-800">ABOUT US</p>
-          <p className=" md:py-4 py-2 md:text-4xl text-2xl font-semibold ">
-            With our knowledge we guarentee success
+
+          <p className=" md:py-4 py-4 md:text-justify">
+            CONVENIR Investments Limited is a multidisciplinary company that was
+            established in 2021 with a the goal to provide specialized services
+            in the areas of General Dealing and Supply, Engineering and
+            Construction, and Project Management.
           </p>
-          <p className=" md:py-2 py-2">Lorem ipsum dolor sit amet.</p>
-          <p className=" md:py-4 py-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
-            laboriosam explicabo sit dicta aliquam ut, saepe maxime esse, soluta
-            nihil officiis perferendis dolorem magni non debitis aspernatur enim
-            obcaecati velit?
+          <p className=" py-2 md:text-justify">
+            {" "}
+            Through collaboration, integrity, and relentless pursuit of
+            excellence, we strive to make a meaningful di erence in the world,
+            one solution at a time
           </p>
-          <PrimaryButton
+          {/* <PrimaryButton
             label={"Learn More ->"}
             className=" bg-red-600 text-white md:text-lg md:font-medium md:p-2 p-2 rounded-md"
-          />
+          /> */}
         </div>
         <div>1</div>
       </div>

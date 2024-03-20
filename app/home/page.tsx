@@ -1,4 +1,5 @@
 import AboutUs from "../components/AboutUs";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 
@@ -9,7 +10,7 @@ const Homepage = (props: Props) => {
     <div className=" ">
       <Hero />
       <AboutUs />
-      <Services />
+      <Footer />
     </div>
   );
 };

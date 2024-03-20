@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from "../Assets/Logo Convenir_Vector File.pdf.png";
+import Link from "next/link";
 
 type Props = {};
 export interface IImg {
@@ -16,18 +17,18 @@ const Navbar = (props: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="fixed bg-white top-14 z-50 w-full lg:px-20 px-4 py-2  bg-opacity-80 backdrop-blur-md">
-      <nav className=" flex justify-between w-full items-center border-t-2 md:pt-4 pt-2">
-        <div>
+    <div className="  border-b fixed bg-white top-0 z-50 w-full lg:px-20 px-4 py-2  bg-opacity-80 backdrop-blur-md">
+      <nav className=" flex justify-between w-full items-center md:pt-4 pt-2">
+        <Link href={"/"}>
           <Image className=" md:w-full w-44 md:h-8" src={logo} alt="picture" />
-        </div>
+        </Link>
         <div className="">
           <ul className=" lg:flex gap-10 hidden font-semibold items-center">
-            <li>Home</li>
-            <li>Services</li>
-            <li>Pages</li>
-            <li>News</li>
-            <li>Contacts</li>
+            <Link href={"home"}>Home</Link>
+            <Link href={"services"}>Services</Link>
+            <Link href={"works"}>Works</Link>
+            <Link href={"vacancies"}>Vacancies</Link>
+            <Link href={"contacts"}>Contacts</Link>
           </ul>
         </div>
         <div className=" lg:hidden pl-20 flex top-10">

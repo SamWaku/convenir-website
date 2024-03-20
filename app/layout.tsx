@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <main className=" flex">
-        <TopNavbar />
+        {/* <TopNavbar /> */}
         <Navbar />
       </main>
       <body className={inter.className}>
         {" "}
-        <div className=" grid grid-cols-1 md:pt-[7.5rem] pt-28">{children}</div>
+        <div className=" grid grid-cols-1 md:pt-[3.5rem] pt-28">{children}</div>
       </body>
     </html>
   );
