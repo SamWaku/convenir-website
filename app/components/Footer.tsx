@@ -1,12 +1,13 @@
 type Props = {};
 import Image from "next/image";
 import logo from "../Assets/convenirlogowhite.png";
+import Link from "next/link";
 
 const Footer = (props: Props) => {
   return (
-    <div className=" bottom-0 md:h-96 md:flex w-full pt-10">
+    <div className=" bottom-0 md:h-80 md:flex w-full pt-10">
       {" "}
-      <div className=" bg-[#4e4e4e] text-white md:grid md:grid-cols-1 md:px-8 ">
+      <div className=" bg-[#4e4e4e] md:w-[34rem] text-white md:grid md:grid-cols-1 md:px-8 ">
         <div className=" pt-8 md:pl-10">
           <Image src={logo} className=" w-52" alt="logo" />
         </div>
@@ -24,7 +25,28 @@ const Footer = (props: Props) => {
           <p> Choma Branch: No. 03 Chodort Estates</p>
         </div>
       </div>
-      <div className=" bg-[#00215B] md:px-[30.5rem] py-40 "></div>
+      <div className=" bg-[#00215B] md:w-[60rem]  text-white md:px-10 md:py-10 ">
+        <div className=" md:grid md:grid-cols-3">
+          <div>
+            <h2>Quick Links</h2>
+            <div className=" md:grid md:grid-cols-1 md:pt-4">
+              <Link href={"/services"}>Services</Link>
+              <Link href={"/works"}>Works</Link>
+              <Link href={"/vacancies"}>Vacancies</Link>
+              <Link href={"/contacts"}>Contacts</Link>
+            </div>
+          </div>
+          <div>
+            <h2>Supported Clients</h2>
+            <div className=" md:grid md:grid-cols-1 md:pt-4"></div>
+          </div>
+          <div>
+            <h2>Our News</h2>
+            <div className=" md:grid md:grid-cols-1 md:pt-4"></div>
+          </div>
+        </div>
+        <div className=" md:pt-8"> © 2024 Convenir Investments Limited</div>
+      </div>
     </div>
   );
 };
