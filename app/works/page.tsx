@@ -6,6 +6,7 @@ import napsa from "../Assets/napsa.png";
 import skytrail from "../Assets/skytrails.png";
 import swasco from "../Assets/swasco.png";
 import zesco from "../Assets/zesco.png";
+import Footer from "../components/Footer";
 
 type Props = {};
 
@@ -99,6 +100,7 @@ const Works = (props: Props) => {
           success in every service we provide.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };

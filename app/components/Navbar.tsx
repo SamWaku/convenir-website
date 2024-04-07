@@ -85,23 +85,23 @@ const Navbar = (props: Props) => {
               <li>
                 <div>
                   <button className=" hover:text-[#dc3545] peer">
-                    <a href={"/home"}>Services</a>
+                    <a href={"/services"}>Services</a>
                   </button>
                 </div>
               </li>
               <li>
                 <a className=" hover:text-[#dc3545]">
-                  <a href={"/home"}>Pages</a>
+                  <a href={"/works"}>Works</a>
                 </a>
               </li>
               <li>
                 <a className=" hover:text-[#dc3545]">
-                  <a href={"/home"}>News</a>
+                  <a href={"/vacancies"}>Vacanies</a>
                 </a>
               </li>
               <li>
                 <a className=" hover:text-[#dc3545]">
-                  <a href={"/home"}>Contacts</a>
+                  <a href={"/contacts"}>Contacts</a>
                 </a>
               </li>
               <li></li>
