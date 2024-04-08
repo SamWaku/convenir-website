@@ -8,7 +8,7 @@ const Services = (props: Props) => {
   return (
     <div>
       <div className=" md:px-0 px-4">
-        <h2 className=" md:text-center md:text-4xl text-4xl text-slate-700 md:font-semibold font-semibold">
+        <h2 className=" text-center md:text-4xl text-4xl text-slate-700 md:font-semibold font-semibold">
           Our Services
         </h2>
         <p className=" md:mx-52 md:text-center md:py-8 md:text-lg  text-justify">

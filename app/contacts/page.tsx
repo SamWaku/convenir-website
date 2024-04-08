@@ -12,29 +12,29 @@ const Contacts = (props: Props) => {
     <div>
       <div>
         <div>
-          <div className="md:w-full bg-gray-100 md:h-[12rem] ">
-            <div className=" relative md:text-center md:w-full">
+          <div className="md:w-full w-full bg-gray-100 md:h-[12rem]  ">
+            <div className=" relative md:text-center md:w-full w-full">
               <div>
                 <Image
                   src={contactimg}
-                  className=" w-full md:h-[20rem] h-40 object-cover object-center"
+                  className=" md:w-full w-[300rem] md:h-[20rem] h-40 object-cover object-center"
                   alt="image"
                 />
               </div>
-              <h2 className=" md:top-32 md:left-[36.7rem] text-center absolute md:text-6xl text-slate-700 font-semibold">
+              <h2 className=" md:top-32 top-16 md:left-[36.7rem] left-[8rem] text-center absolute md:text-6xl text-4xl text-slate-700 font-semibold">
                 <span className=" text-white">Contact Us</span>
               </h2>
             </div>
           </div>
         </div>
 
-        <div className=" pt-40">
-          <h2 className=" md:text-center md:text-3xl md:font-semibold text-slate-800 ">
+        <div className=" md:pt-40 pt-2">
+          <h2 className=" text-center md:text-3xl md:font-semibold text-slate-800 ">
             Company Addresses
           </h2>
-          <div className=" py-8 md:grid md:grid-cols-2 md:mx-24">
+          <div className=" md:py-8 py-4 md:grid md:grid-cols-2 md:mx-24">
             <div>
-              <p className=" md:text-center text-lg">Lusaka</p>
+              <p className=" text-center text-lg">Lusaka</p>
               <div>
                 <iframe
                   className=" rounded-md"
@@ -49,7 +49,7 @@ const Contacts = (props: Props) => {
               </div>
             </div>
             <div>
-              <h2 className=" md:text-center text-lg">Choma </h2>
+              <h2 className=" text-center text-lg">Choma </h2>
               <div>
                 <iframe
                   className=" rounded-md"
@@ -74,7 +74,7 @@ const Contacts = (props: Props) => {
           </div>
         </div>
 
-        <div className=" md:grid md:grid-cols-2 md:gap-8 md:px-20">
+        <div className=" md:grid flex-col md:grid-cols-2 md:gap-8 md:px-20">
           <div className=" border-l-8 border-l-[#dc3545] border md:p-4 shadow-md">
             <p>Address</p>
             <p className="  text-2xl">

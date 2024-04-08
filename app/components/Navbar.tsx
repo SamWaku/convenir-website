@@ -78,30 +78,30 @@ const Navbar = (props: Props) => {
           >
             <ul className=" grid gap-4 mt-4 p-4 text-left items-start justify-start w-full">
               <li>
-                <a className="hover:text-[#dc3545] relative">
-                  <a href="/dashboard">Home</a>
-                </a>
+                <div className="hover:text-[#dc3545] relative">
+                  <Link href="/dashboard">Home</Link>
+                </div>
               </li>
               <li>
                 <div>
                   <button className=" hover:text-[#dc3545] peer">
-                    <a href={"/services"}>Services</a>
+                    <Link href={"/services"}>Services</Link>
                   </button>
                 </div>
               </li>
               <li>
                 <a className=" hover:text-[#dc3545]">
-                  <a href={"/works"}>Works</a>
+                  <Link href={"/works"}>Works</Link>
                 </a>
               </li>
               <li>
                 <a className=" hover:text-[#dc3545]">
-                  <a href={"/vacancies"}>Vacanies</a>
+                  <Link href={"/vacancies"}>Vacanies</Link>
                 </a>
               </li>
               <li>
                 <a className=" hover:text-[#dc3545]">
-                  <a href={"/contacts"}>Contacts</a>
+                  <Link href={"/contacts"}>Contacts</Link>
                 </a>
               </li>
               <li></li>

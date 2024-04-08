@@ -14,28 +14,29 @@ const Works = (props: Props) => {
   return (
     <div>
       <div>
-        <h2 className=" md:py-10 md:text-center md:text-slate-700 md:text-5xl md:font-semibold">
+        <h2 className=" text-center md:text-4xl text-4xl text-slate-700 md:font-semibold font-semibold">
           Completed Projects and Orders
         </h2>
       </div>
-      <div className=" md:grid md:grid-cols-3 md:mx-20 md:gap-10 md:py-10">
-        <div className=" md:text-center">
+      <div className=" md:grid md:grid-cols-3 md:mx-20 mx-10 md:gap-10 md:py-10">
+        <div className=" text-center md:pt-0 pt-10 md:border-0 border-b md:py-0 py-2">
           <div>
-            <Image src={zesco} alt="zesco" />
+            <Image className=" md:pl-0 pl-12" src={zesco} alt="zesco" />
           </div>
           <div>
             <h2 className=" text-3xl md:font-medium text-slate-700">
               Zesco Ltd
             </h2>
-            <p className=" md:text-center">Construction of Over-Head Lines</p>
+            <p className=" text-center">Construction of Over-Head Lines</p>
           </div>
         </div>
-        <div className=" text-center">
-          <div className=" md:text-center md:items-center md:align-items-center ">
-            <Image src={swasco} alt="swasco" />
+
+        <div className=" text-center md:pt-0 pt-10 md:border-0 border-b md:py-0 py-2">
+          <div className=" text-center items-center align-items-center ">
+            <Image className=" md:ml-0 ml-16 " src={swasco} alt="swasco" />
           </div>
           <div>
-            <h2 className=" md:text-center text-3xl md:font-medium text-slate-700">
+            <h2 className=" text-center text-3xl md:font-medium text-slate-700">
               SWASCO
             </h2>
             <div className=" md:text-justify">
@@ -46,27 +47,32 @@ const Works = (props: Props) => {
             </div>
           </div>
         </div>
-        <div className=" md:text-center">
+
+        <div className=" text-center md:pt-0 pt-10 md:border-0 border-b md:py-0 py-2">
           <div>
             <Image src={napsa} alt="napsa" />
           </div>
           <div>
-            <h2 className=" text-3xl md:font-medium text-slate-700">NAPSA</h2>
+            <h2 className=" text-3xl md:font-medium text-slate-700 text-center">
+              NAPSA
+            </h2>
             <p>Supply & delivery of Stationery</p>
           </div>
         </div>
-        <div className=" md:text-center">
+
+        <div className=" text-center md:pt-0 pt-10 md:border-0 border-b md:py-0 py-2">
           <div>
             <Image src={mulungushi} alt="mulungushi" />
           </div>
-          <div>
-            <h2 className=" text-3xl md:font-medium text-slate-700">
+          <div className=" text-center">
+            <h2 className=" text-3xl md:font-medium text-slate-700 text-center">
               Mulungushi Village Complex Ltd
             </h2>
             <p>Routine Repair & Maintenance</p>
           </div>
         </div>
-        <div className=" md:text-center">
+
+        <div className=" text-center md:pt-0 pt-10 md:border-0 border-b md:py-0 py-2">
           <div>
             <Image src={chinacorp} alt="china" />
           </div>
@@ -78,7 +84,8 @@ const Works = (props: Props) => {
             <p>Supply of Project Sign Boards</p>
           </div>
         </div>
-        <div className=" md:text-center">
+
+        <div className=" text-center md:pt-0 pt-10 md:border-0 border-b md:py-0 py-2">
           <div>
             <Image src={skytrail} alt="skytrail" />
           </div>
@@ -92,7 +99,7 @@ const Works = (props: Props) => {
         </div>
       </div>
       <div>
-        <p className=" md:px-20">
+        <p className=" md:px-20 px-4 md:text-left text-justify md:pt-0 pt-10">
           Convenir Investments serves a diverse clientele, including businesses,
           government agencies, and non-protsi. Our tailored solutions and
           commitment to excellence have earned us their trust and loyalty. From
