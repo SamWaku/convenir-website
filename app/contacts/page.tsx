@@ -28,16 +28,16 @@ const Contacts = (props: Props) => {
           </div>
         </div>
 
-        <div className=" md:pt-40 pt-2">
-          <h2 className=" text-center md:text-3xl md:font-semibold text-slate-800 ">
+        <div className=" md:pt-40 pt-4 md:mx-0 mx-2">
+          <h2 className=" text-center text-2xl md:font-semibold text-slate-800 ">
             Company Addresses
           </h2>
-          <div className=" md:py-8 py-4 md:grid md:grid-cols-2 md:mx-24">
-            <div>
+          <div className=" py-8 md:grid md:grid-cols-2 md:gap-6 md:mx-24">
+            <div className=" md:pb-0 pb-8 ">
               <p className=" text-center text-lg">Lusaka</p>
               <div>
                 <iframe
-                  className=" rounded-md"
+                  className=" shadow-md rounded-md md:w-full w-[25rem]"
                   src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3846.576291239119!2d28.297087079439038!3d-15.39941677513717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTXCsDIzJzU3LjkiUyAyOMKwMTgnMDcuMSJF!5e0!3m2!1sen!2szm!4v1712459538219!5m2!1sen!2szm"
                   width="600"
                   height="450"
@@ -52,7 +52,7 @@ const Contacts = (props: Props) => {
               <h2 className=" text-center text-lg">Choma </h2>
               <div>
                 <iframe
-                  className=" rounded-md"
+                  className=" shadow-md rounded-md md:w-full w-[25rem]"
                   src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3819.2744233103845!2d26.987374079656682!3d-16.812736807525088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDQ4JzQ1LjkiUyAyNsKwNTknMzIuMSJF!5e0!3m2!1sen!2szm!4v1712459853823!5m2!1sen!2szm"
                   width="600"
                   height="450"
@@ -69,22 +69,32 @@ const Contacts = (props: Props) => {
         </div>
 
         <div>
-          <div className=" md:px-52 md:py-8 ">
-            <Image className=" rounded-md" src={office} alt="Office" />
+          <div className=" md:px-52 md:py-8 pb-8 px-2 ">
+            <h2 className=" text-center pb-2 text-lg md:font-bold">
+              Our Office
+            </h2>
+            <Image
+              className=" md:h-full h-72 rounded-md"
+              src={office}
+              alt="Office"
+            />
           </div>
         </div>
 
-        <div className=" md:grid flex-col md:grid-cols-2 md:gap-8 md:px-20">
-          <div className=" border-l-8 border-l-[#dc3545] border md:p-4 shadow-md">
+        <div className=" md:grid md:grid-cols-2 md:gap-8 md:px-20 px-2">
+          <div className=" p-2 border-l-8 border-l-[#dc3545] border md:p-4 shadow-md">
             <p>Address</p>
-            <p className="  text-2xl">
+            <p className="  md:text-2xl">
               Lusaka Branch: Stand No. 6085 Chituli Road Northmead.
             </p>
-            <p className="  text-2xl"> Choma Branch: No. 03 Chodort Estates</p>
+            <p className="  md:text-2xl">
+              {" "}
+              Choma Branch: No. 03 Chodort Estates
+            </p>
           </div>
-          <div className=" md:grid md:grid-cols-2">
-            <div className=" flex md:gap-2">
-              <div className=" md:pt-2 md:w-10 md:h-10">
+          <div className=" md:grid md:grid-cols-2 flex-col md:gap-0 gap-8 md:pt-0 pt-8">
+            <div className=" flex gap-2 md:pb-0 pb-8">
+              <div className=" pt-2 md:w-10 w-20 md:h-10 h-20">
                 <Image src={phone} alt="phone" />
               </div>
               <div>
@@ -98,8 +108,8 @@ const Contacts = (props: Props) => {
             </div>
 
             <div className=" ">
-              <div className=" items-center flex md:gap-2">
-                <div>
+              <div className=" items-center flex gap-2">
+                <div className=" pt-2 md:w-10 w-20 md:h-10 h-20">
                   <Image className=" md:w-10 md:h-8" src={email} alt="phone" />
                 </div>
                 <div>
